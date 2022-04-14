@@ -1,7 +1,7 @@
 # technical-challenge-zenvia
 
 ## proposta de solução do teste
-Uma API Rest a qual conterá n endpoints necessários para retornar os objetivos do desafio escolhido.\nExemplo: 
+Uma API Rest a qual conterá n endpoints necessários para retornar os objetivos do desafio escolhido. Exemplo: 
         Caixa eletrônico: Um endpoint que recebe método POST com o valor do saque no body da requisição, e que retorna 
         statusCode = 200 para caso seja possivel sacar aquele valor com as notas disponiveis no caixa, e retorne 400 caso 
         não haja essa possibilidade. Tendo em vista que o nosso algoritmo (na camada de regra de negócio) que determinará
