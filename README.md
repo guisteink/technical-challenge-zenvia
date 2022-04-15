@@ -7,6 +7,9 @@
     não haja essa possibilidade. Tendo em vista que o nosso algoritmo (na camada de regra de negócio) que determinará
     essa possibilidade de saque. Nos atentando também ao fato de que as notas disponiveis são de 100, 50, 20 e 10, alguns
     valores pequenos não serão passives de saque.
+## para rodar
+npm install && npm start
+
 ## Authors
 
 - [@guisteink](https://www.github.com/guisteink)
