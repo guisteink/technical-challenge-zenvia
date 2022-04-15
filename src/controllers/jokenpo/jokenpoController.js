@@ -15,38 +15,36 @@ class JokenpoController
         console.log('\nJokenpo!!!')
         console.log('Player 1 jogou: ', player1)
         console.log('Player 2 jogou: ', player2)
-        player1 = player1.toLowerCase()
-        player2 = player2.toLowerCase()
-        switch (player1) {
-            case 'Pedra':
-                switch (player2) {
-                    case 'Pedra':
+        switch (player1.toLowerCase()) {
+            case 'pedra':
+                switch (player2.toLowerCase()) {
+                    case 'pedra':
                         return res.status(200).send({ "Result": "Empate" })
-                    case 'Papel':
+                    case 'papel':
                         return res.status(200).send({ "Result": "Vitória do player 2" })
-                    case 'Tesoura':
+                    case 'tesoura':
                         return res.status(200).send({ "Result": "Vitória do player 1" })
                 }
                 break;
 
-            case 'Papel':
-                switch (player2) {
-                    case 'Pedra':
+            case 'papel':
+                switch (player2.toLowerCase()) {
+                    case 'pedra':
                         return res.status(200).send({ "Result": "Vitória do player 1" })
-                    case 'Papel':
+                    case 'papel':
                         return res.status(200).send({ "Result": "Empate" })
-                    case 'Tesoura':
+                    case 'tesoura':
                         return res.status(200).send({ "Result": "Vitória do player 2" })
                 }
                 break;
 
-            case 'Tesoura':
-                switch (player2) {
-                    case 'Pedra':
+            case 'tesoura':
+                switch (player2.toLowerCase()) {
+                    case 'pedra':
                         return res.status(200).send({ "Result": "Vitória do player 2" })
-                    case 'Papel':
+                    case 'papel':
                         return res.status(200).send({ "Result": "Vitória do player 1" })
-                    case 'Tesoura':
+                    case 'tesoura':
                         return res.status(200).send({ "Result": "Empate" })
                 }
                 break;

@@ -4,9 +4,8 @@ class Helper
 
     static isValidPossibilitie(option)
     {
-        option = option.toLowerCase()
         let possibilities = ['pedra', 'papel', 'tesoura']
-        return (possibilities.includes(option))
+        return (possibilities.includes(option.toLowerCase()))
     }
 
 
