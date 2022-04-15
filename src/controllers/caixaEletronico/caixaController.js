@@ -1,9 +1,11 @@
+const helper = require('../../error-handler/Error')
 
 class CaixaEletronicoController
 {
     constructor()
     {
         this.notas = [100, 50, 20, 10]
+        this.helper = helper
     }
 
     getIndexNotaMax(valor, index)
@@ -39,10 +41,10 @@ class CaixaEletronicoController
     saque(req, res)
     {
         const { valor } = req.body;
-        if (!valor || !isValidValue(valor)) res.status(400).send("Bad request")
+        if (!valor || !this.helper.isValidValue(valor)) return res.status(400).send("Bad request")
         let valorDeSaque = this.setSaque(valor, 0);
         return valorDeSaque.length > 0 ?
-            res.status(200).send({ "Result": valorDeSaque }) : res.status(400).json({ "Result": "Não foi possível fazer o saque desse valor" });
+            res.status(200).send({ "Result": valorDeSaque }) : res.status(400).send({ "Result": "Não foi possível fazer o saque desse valor" });
     }
 
 }

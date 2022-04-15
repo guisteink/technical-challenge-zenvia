@@ -1,4 +1,4 @@
-class Helper
+class Error
 {
     constructor() { }
 
@@ -8,11 +8,11 @@ class Helper
         return (possibilities.includes(option.toLowerCase()))
     }
 
-
     static isValidValue(value) 
     {
-
+        if (typeof value === "number") return true
+        return false
     }
 }
 
-module.exports = Helper;
+module.exports = Error;

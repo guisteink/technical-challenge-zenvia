@@ -7,10 +7,14 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest test"
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "dependencies": {
     "express": "^4.17.3",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "node-mocks-http": "^1.11.0"
   }
 }
