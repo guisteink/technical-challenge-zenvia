@@ -10,6 +10,10 @@
 ## para rodar
 npm install && npm start
 
+## endpoints
+-> localhost:3000/caixa/saque. Enviar no body o valor do saque, ex: req.body: { valor: 50 }
+-> localhost:3000/jokenpo/play. Enviar no body as opções de jogadas do player 1 e 2, ex: req.body: { player1: 'Tesoura', player2: 'Papel' }
+
 ## Authors
 
 - [@guisteink](https://www.github.com/guisteink)
