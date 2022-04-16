@@ -7,11 +7,11 @@
     não haja essa possibilidade. Tendo em vista que o nosso algoritmo (na camada de regra de negócio) que determinará
     essa possibilidade de saque. Nos atentando também ao fato de que as notas disponiveis são de 100, 50, 20 e 10, alguns
     valores pequenos não serão passives de saque.
+
+    - localhost:3000/caixa/saque. Enviar no body o valor do saque, ex: req.body: { valor: 50 }
+    - localhost:3000/jokenpo/play. Enviar no body as opções de jogadas do player 1 e 2, ex: req.body: { player1: 'Tesoura', player2: 'Papel' }
 ## para rodar
 npm install && npm start
-
-### localhost:3000/caixa/saque. Enviar no body o valor do saque, ex: req.body: { valor: 50 }
-#### localhost:3000/jokenpo/play. Enviar no body as opções de jogadas do player 1 e 2, ex: req.body: { player1: 'Tesoura', player2: 'Papel' }
 
 ## Authors
 
